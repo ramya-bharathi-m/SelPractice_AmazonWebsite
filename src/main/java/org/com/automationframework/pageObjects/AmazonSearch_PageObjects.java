@@ -1,12 +1,11 @@
 package org.com.automationframework.pageObjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class AmazonSearch_PageObject {
+public class AmazonSearch_PageObjects {
     @FindBy(xpath = "//input[@id='twotabsearchtextbox']")
     public WebElement searchButton;
 
@@ -22,7 +21,5 @@ public class AmazonSearch_PageObject {
     @FindBy(xpath = "//span[@class='a-size-large product-title-word-break']")
     public WebElement headerinsidePage;
 
-    public void searchItem(String element){
-        searchButton.sendKeys(element);
-    }
+
 }
