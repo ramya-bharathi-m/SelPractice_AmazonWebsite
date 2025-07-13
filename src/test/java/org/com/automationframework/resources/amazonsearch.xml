@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="AmazonAutomationSuite" parallel="false">
+
+    <test name="Amazon Search Test">
+        <classes>
+            <class name="org.com.automationframework.runner.amazonSearchRunner"/>
+        </classes>
+    </test>
+
+    <test name="BestSeller">
+        <classes>
+            <class name="org.com.automationframework.runner.amazonBestSellerRunner"/>
+        </classes>
+    </test>
+
+</suite>
